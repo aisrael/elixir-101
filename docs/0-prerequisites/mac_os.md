@@ -69,4 +69,4 @@ Erlang/OTP 22 [erts-10.7.1] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-t
 Elixir 1.10.3 (compiled with Erlang/OTP 21)
 ```
 
-You may now proceed to the [Basics](/1-basics/basics).
+You may now proceed to the [Basics](../1-basics/tools.md).

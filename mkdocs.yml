@@ -2,4 +2,5 @@ site_name: Elixir 101
 
 nav:
   - Home: "index.md"
-  - Basics: "1-basics/basics.md"
+  - Basics:
+      - Tools: "1-basics/tools.md"
