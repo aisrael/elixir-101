@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Elixir 101
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is the companion documentation to my Elixir 101 course.
 
-## Commands
+## Prerequisites
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+First, make sure that you have all the [prequisites](0-prerequisites/prerequisites.md).
 
-## Project layout
+## Basics
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+With the prerequisites out of the way, proceed to learn [Elixir Basics](1-basics/basics.md).
