@@ -109,13 +109,48 @@ iex(1)&gt;
 </code></pre>
 
 <p>(Press <code>Ctrl+C</code> or <code>Ctrl+\</code> to exit <code>iex</code> and return to the operating system shell.)</p>
+<p>The number in parenthesis at the <code>iex</code> prompt is the "line number", and can be used to <a href="https://medium.com/@erichkist/elixir-tips-1-copy-last-result-in-iex-871f148d7f41">retrieve previously evaluated values</a>.</p>
+<p>For some general help with using <code>iex</code>, simply type <code>h</code> then press Enter:</p>
+<pre><code>iex(1)&gt; h
+
+                                  IEx.Helpers
+
+Welcome to Interactive Elixir. You are currently seeing the documentation for
+the module IEx.Helpers which provides many helpers to make Elixir's shell more
+joyful to work with.
+
+This message was triggered by invoking the helper h(), usually referred to as
+h/0 (since it expects 0 arguments).
+.
+.
+.
+</code></pre>
+
+<p>Throughtout this tutorial, we will frequently use <code>iex</code> to quickly demonstrate or try out Elixir code, but we will disregard the line number (the <code>(1)</code> above). For example, the following example shows how to get the current OTP version in Elixir:</p>
+<pre><code class="elixir">iex&gt; :erlang.system_info(:otp_release)
+'22'
+</code></pre>
+
 <h2 id="mix"><code>mix</code></h2>
-<p>Mix is a code generator. dependency management, build tool, and packaging tool all in one, among other things.</p>
+<p>Mix is a code generator, dependency management, build tool, and packaging tool all in one, among other things.</p>
 <pre><code class="bash">$ mix --version
 Erlang/OTP 22 [erts-10.7.1] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-threads:1] [hipe]
 
 Mix 1.10.3 (compiled with Erlang/OTP 21)
-</code></pre></div>
+</code></pre>
+
+<p>We'll explore <code>mix</code> more specifically as we get to later sections.</p>
+<p>For now, let's just install <a href="https://hex.pm">Hex</a>, the package manager for the Elixir ecosystem, and <a href="https://github.com/erlang/rebar3">rebar</a>:</p>
+<pre><code>$ mix local.hex
+Are you sure you want to install &quot;https://repo.hex.pm/installs/1.10.0/hex-0.20.5.ez&quot;? [Yn] y
+* creating .asdf/installs/elixir/1.10.3/.mix/archives/hex-0.20.5
+
+$ mix local.rebar
+* creating .asdf/installs/elixir/1.10.3/.mix/rebar
+* creating .asdf/installs/elixir/1.10.3/.mix/rebar3
+</code></pre>
+
+<p>Next, let's wrap our heads around <a href="../basics/">Elixir Basics</a>.</p></div>
             </div>
         </div>
 
